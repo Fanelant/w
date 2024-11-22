@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My wallpapers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #8482f2;
+            color: #ffffff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery a {
+            text-decoration: none;
+        }
+        .download-btn {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Download My Wallpapers</h1>
+        <p>Click on any image to download it!</p>
+    </div>
+    <div class="gallery">
+        <a href="wallpapers/1.png" download>
+            <img src="wallpapers/1.png" alt="Wallpaper 1">
+            <div class="download-btn">Download</div>
+        </a>
+        <a href="wallpapers/2.png" download>
+            <img src="wallpapers/2.png" alt="Wallpaper 2">
+            <div class="download-btn">Download</div>
+        </a>
+        <a href="wallpapers/3.pmg" download>
+            <img src="wallpapers/3.png" alt="Wallpaper 3">
+            <div class="download-btn">Download</div>
+        </a>
+        <!-- Add more wallpapers similarly -->
+    </div>
+</body>
+</html>
